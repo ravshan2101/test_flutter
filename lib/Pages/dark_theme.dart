@@ -20,12 +20,13 @@ class _DarkthmeState extends State<Darkthme> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color(0xefef121212),
         body: SingleChildScrollView(
           child: Container(
             color: Color(0xefef121212),
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 60,
                 ),
                 Container(
@@ -34,7 +35,7 @@ class _DarkthmeState extends State<Darkthme> {
                       color: Color(0xefef272727),
                       borderRadius: BorderRadius.circular(20)),
                   margin: EdgeInsets.only(top: 30, right: 10, left: 10),
-                  child: TextField(
+                  child: const TextField(
                     decoration: InputDecoration(
                       border: InputBorder.none,
                       hintText: 'Search',
@@ -42,7 +43,7 @@ class _DarkthmeState extends State<Darkthme> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 GestureDetector(
@@ -50,8 +51,8 @@ class _DarkthmeState extends State<Darkthme> {
                     Navigator.pushReplacementNamed(context, 'lighttheme');
                   },
                   child: Container(
-                    margin: EdgeInsets.only(right: 250),
-                    child: Text(
+                    margin: const EdgeInsets.only(right: 250),
+                    child: const Text(
                       'Dark theme',
                       style: TextStyle(
                           fontSize: 24,
@@ -60,196 +61,212 @@ class _DarkthmeState extends State<Darkthme> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Container(
-                  width: 400,
-                  height: 200,
-                  child: Column(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 10, right: 280),
-                        child: Text(
-                          '15 mins ago',
-                          style: TextStyle(
-                              fontSize: 13.67, color: Color(0xefefFFD76F)),
+                Card(
+                  color: Color(0xefef121212),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xefef272727),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(top: 10, right: 280),
+                          child: const Text(
+                            '15 mins ago',
+                            style: TextStyle(
+                                fontSize: 13.67, color: Color(0xefefFFD76F)),
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 40),
-                        child: Text(
-                          'Prototype like a material boss',
-                          style: TextStyle(
-                              fontSize: 22.7895, color: Color(0xefefFFFFFF)),
+                        const SizedBox(
+                          height: 5,
                         ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(left: 20, right: 150),
-                        child: Text(
-                          "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
-                          style: TextStyle(
-                              color: Color(0xefefE0E0E0),
-                              fontSize: 15.95,
-                              fontWeight: FontWeight.w400,
-                              fontStyle: FontStyle.normal),
+                        Container(
+                          margin: EdgeInsets.only(right: 40),
+                          child: const Text(
+                            'Prototype like a material boss',
+                            style: TextStyle(
+                                fontSize: 22.7895, color: Color(0xefefFFFFFF)),
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  decoration: BoxDecoration(
-                    color: Color(0xefef272727),
-                    borderRadius: BorderRadius.circular(20),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Flexible(
+                          child: Container(
+                            margin: EdgeInsets.only(left: 20, right: 150),
+                            child: const Text(
+                              "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
+                              style: TextStyle(
+                                  color: Color(0xefefE0E0E0),
+                                  fontSize: 15.95,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
-                Container(
-                  width: 400,
-                  height: 200,
-                  child: Column(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 10, right: 280),
-                        child: Text(
-                          '15 mins ago',
-                          style: TextStyle(
-                              fontSize: 13.67, color: Color(0xefefFFD76F)),
+                Card(
+                  color: Color(0xefef121212),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xefef272727),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(top: 10, right: 280),
+                          child: const Text(
+                            '15 mins ago',
+                            style: TextStyle(
+                                fontSize: 13.67, color: Color(0xefefFFD76F)),
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 40),
-                        child: Text(
-                          'Prototype like a material boss',
-                          style: TextStyle(
-                              fontSize: 22.7895, color: Color(0xefefFFFFFF)),
+                        const SizedBox(
+                          height: 5,
                         ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(left: 20, right: 150),
-                        child: Text(
-                          "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
-                          style: TextStyle(
-                              color: Color(0xefefE0E0E0),
-                              fontSize: 15.95,
-                              fontWeight: FontWeight.w400,
-                              fontStyle: FontStyle.normal),
+                        Container(
+                          margin: EdgeInsets.only(right: 40),
+                          child: const Text(
+                            'Prototype like a material boss',
+                            style: TextStyle(
+                                fontSize: 22.7895, color: Color(0xefefFFFFFF)),
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  decoration: BoxDecoration(
-                    color: Color(0xefef272727),
-                    borderRadius: BorderRadius.circular(20),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Flexible(
+                          child: Container(
+                            margin: EdgeInsets.only(left: 20, right: 150),
+                            child: const Text(
+                              "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
+                              style: TextStyle(
+                                  color: Color(0xefefE0E0E0),
+                                  fontSize: 15.95,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
-                Container(
-                  width: 400,
-                  height: 200,
-                  child: Column(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 10, right: 280),
-                        child: Text(
-                          '15 mins ago',
-                          style: TextStyle(
-                              fontSize: 13.67, color: Color(0xefefFFD76F)),
+                Card(
+                  color: Color(0xefef121212),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xefef272727),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(top: 10, right: 280),
+                          child: const Text(
+                            '15 mins ago',
+                            style: TextStyle(
+                                fontSize: 13.67, color: Color(0xefefFFD76F)),
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 40),
-                        child: Text(
-                          'Prototype like a material boss',
-                          style: TextStyle(
-                              fontSize: 22.7895, color: Color(0xefefFFFFFF)),
+                        const SizedBox(
+                          height: 5,
                         ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(left: 20, right: 150),
-                        child: Text(
-                          "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
-                          style: TextStyle(
-                              color: Color(0xefefE0E0E0),
-                              fontSize: 15.95,
-                              fontWeight: FontWeight.w400,
-                              fontStyle: FontStyle.normal),
+                        Container(
+                          margin: EdgeInsets.only(right: 40),
+                          child: const Text(
+                            'Prototype like a material boss',
+                            style: TextStyle(
+                                fontSize: 22.7895, color: Color(0xefefFFFFFF)),
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  decoration: BoxDecoration(
-                    color: Color(0xefef272727),
-                    borderRadius: BorderRadius.circular(20),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Flexible(
+                          child: Container(
+                            margin: EdgeInsets.only(left: 20, right: 150),
+                            child: const Text(
+                              "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
+                              style: TextStyle(
+                                  color: Color(0xefefE0E0E0),
+                                  fontSize: 15.95,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
-                Container(
-                  width: 400,
-                  height: 200,
-                  child: Column(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 10, right: 280),
-                        child: Text(
-                          '15 mins ago',
-                          style: TextStyle(
-                              fontSize: 13.67, color: Color(0xefefFFD76F)),
+                Card(
+                  color: const Color(0xefef121212),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xefef272727),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(top: 10, right: 280),
+                          child: const Text(
+                            '15 mins ago',
+                            style: TextStyle(
+                                fontSize: 13.67, color: Color(0xefefffd76f)),
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 40),
-                        child: Text(
-                          'Prototype like a material boss',
-                          style: TextStyle(
-                              fontSize: 22.7895, color: Color(0xefefFFFFFF)),
+                        const SizedBox(
+                          height: 5,
                         ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(left: 20, right: 150),
-                        child: Text(
-                          "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
-                          style: TextStyle(
-                              color: Color(0xefefE0E0E0),
-                              fontSize: 15.95,
-                              fontWeight: FontWeight.w400,
-                              fontStyle: FontStyle.normal),
+                        Container(
+                          margin: EdgeInsets.only(right: 40),
+                          child: const Text(
+                            'Prototype like a material boss',
+                            style: TextStyle(
+                                fontSize: 22.7895, color: Color(0xefefFFFFFF)),
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  decoration: BoxDecoration(
-                    color: Color(0xefef272727),
-                    borderRadius: BorderRadius.circular(20),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Flexible(
+                          child: Container(
+                            margin: EdgeInsets.only(left: 20, right: 150),
+                            child: const Text(
+                              "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
+                              style: TextStyle(
+                                  color: Color(0xefefE0E0E0),
+                                  fontSize: 15.95,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
@@ -268,7 +285,7 @@ class _DarkthmeState extends State<Darkthme> {
                       width: 80,
                       height: 80,
                       decoration: BoxDecoration(
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               alignment: Alignment.topCenter,
                               fit: BoxFit.cover,
                               image: AssetImage(
@@ -278,14 +295,14 @@ class _DarkthmeState extends State<Darkthme> {
                     ),
                     Container(
                       margin: EdgeInsets.only(top: 40, right: 100),
-                      child: Text(
+                      child: const Text(
                         'Penelopa Shluhina',
                         style: TextStyle(fontSize: 20, color: Colors.white),
                       ),
                     ),
                     Container(
                       margin: EdgeInsets.only(right: 100),
-                      child: Text(
+                      child: const Text(
                         'purchasenow@gmail.com',
                         style: TextStyle(color: Colors.white),
                       ),
@@ -306,7 +323,7 @@ class _DarkthmeState extends State<Darkthme> {
                                 onPressed: () {},
                                 icon: Icon(Icons.inbox),
                                 label: Text('Inbox'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
@@ -315,7 +332,7 @@ class _DarkthmeState extends State<Darkthme> {
                                 onPressed: () {},
                                 icon: Icon(Icons.bookmark),
                                 label: Text('Book'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
@@ -324,7 +341,7 @@ class _DarkthmeState extends State<Darkthme> {
                                 onPressed: () {},
                                 icon: Icon(Icons.chat),
                                 label: Text('Chat'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
@@ -333,7 +350,7 @@ class _DarkthmeState extends State<Darkthme> {
                                 onPressed: () {},
                                 icon: Icon(Icons.archive),
                                 label: Text('Archive'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         SizedBox(
@@ -342,7 +359,7 @@ class _DarkthmeState extends State<Darkthme> {
                         ),
                         Container(
                           margin: EdgeInsets.only(top: 10, right: 180),
-                          child: Text(
+                          child: const Text(
                             "Subheadr",
                             style: TextStyle(color: Colors.white, fontSize: 19),
                           ),
@@ -353,7 +370,7 @@ class _DarkthmeState extends State<Darkthme> {
                                 onPressed: () {},
                                 icon: Icon(Icons.place),
                                 label: Text('Place'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
@@ -362,7 +379,7 @@ class _DarkthmeState extends State<Darkthme> {
                                 onPressed: () {},
                                 icon: Icon(Icons.update),
                                 label: Text('Update'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
@@ -371,7 +388,7 @@ class _DarkthmeState extends State<Darkthme> {
                                 onPressed: () {},
                                 icon: Icon(Icons.message),
                                 label: Text('Messeg'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(

@@ -25,21 +25,21 @@ class _MyWidgetState extends State<HomePage> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 60,
               ),
               Container(
                 height: 50,
-                margin: EdgeInsets.only(top: 30, right: 10, left: 10),
+                margin: const EdgeInsets.only(top: 30, right: 10, left: 10),
                 child: TextField(
                   decoration: InputDecoration(
                       hintText: 'Search',
-                      prefixIcon: Icon(Icons.search),
+                      prefixIcon: const Icon(Icons.search),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20))),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               GestureDetector(
@@ -48,198 +48,210 @@ class _MyWidgetState extends State<HomePage> {
                 },
                 child: Container(
                   margin: EdgeInsets.only(right: 250),
-                  child: Text(
+                  child: const Text(
                     'Light theme',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              Container(
-                width: 400,
-                height: 200,
-                child: Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(top: 10, right: 280),
-                      child: Text(
-                        '15 mins ago',
-                        style: TextStyle(
-                            fontSize: 13.67, color: Color(0xefef1869EF)),
+              Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(238, 191, 198, 210),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(top: 10, right: 280),
+                        child: const Text(
+                          '15 mins ago',
+                          style: TextStyle(
+                              fontSize: 13.67, color: Color(0xefef1869EF)),
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(right: 40),
-                      child: Text(
-                        'Prototype like a material boss',
-                        style: TextStyle(
-                            fontSize: 22.7895, color: Color(0xefef263238)),
+                      const SizedBox(
+                        height: 5,
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(left: 20, right: 150),
-                      child: Text(
-                        "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
-                        style: TextStyle(
-                            fontSize: 15.95,
-                            fontWeight: FontWeight.w400,
-                            fontStyle: FontStyle.normal),
+                      Container(
+                        margin: EdgeInsets.only(right: 40),
+                        child: const Text(
+                          'Prototype like a material boss',
+                          style: TextStyle(
+                              fontSize: 22.7895, color: Color(0xefef263238)),
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(238, 191, 198, 210),
-                  borderRadius: BorderRadius.circular(20),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Flexible(
+                        child: Container(
+                          margin: EdgeInsets.only(left: 20, right: 150),
+                          child: const Text(
+                            "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
+                            style: TextStyle(
+                                fontSize: 15.95,
+                                fontWeight: FontWeight.w400,
+                                fontStyle: FontStyle.normal),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
-              Container(
-                width: 400,
-                height: 200,
-                child: Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(top: 10, right: 280),
-                      child: Text(
-                        '15 mins ago',
-                        style: TextStyle(
-                            fontSize: 13.67, color: Color(0xefef1869EF)),
+              Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(238, 191, 198, 210),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.only(top: 10, right: 280),
+                        child: const Text(
+                          '15 mins ago',
+                          style: TextStyle(
+                              fontSize: 13.67, color: Color(0xefef1869EF)),
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(right: 40),
-                      child: Text(
-                        'Prototype like a material boss',
-                        style: TextStyle(
-                            fontSize: 22.7895, color: Color(0xefef263238)),
+                      const SizedBox(
+                        height: 5,
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(left: 20, right: 150),
-                      child: Text(
-                        "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
-                        style: TextStyle(
-                            fontSize: 15.95,
-                            fontWeight: FontWeight.w400,
-                            fontStyle: FontStyle.normal),
+                      Container(
+                        margin: const EdgeInsets.only(right: 40),
+                        child: const Text(
+                          'Prototype like a material boss',
+                          style: TextStyle(
+                              fontSize: 22.7895, color: Color(0xefef263238)),
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(238, 191, 198, 210),
-                  borderRadius: BorderRadius.circular(20),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Flexible(
+                        child: Container(
+                          margin: EdgeInsets.only(left: 20, right: 150),
+                          child: const Text(
+                            "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
+                            style: TextStyle(
+                                fontSize: 15.95,
+                                fontWeight: FontWeight.w400,
+                                fontStyle: FontStyle.normal),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
-              Container(
-                width: 400,
-                height: 200,
-                child: Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(top: 10, right: 280),
-                      child: Text(
-                        '15 mins ago',
-                        style: TextStyle(
-                            fontSize: 13.67, color: Color(0xefef1869EF)),
+              Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(238, 191, 198, 210),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(top: 10, right: 280),
+                        child: const Text(
+                          '15 mins ago',
+                          style: TextStyle(
+                              fontSize: 13.67, color: Color(0xefef1869EF)),
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(right: 40),
-                      child: Text(
-                        'Prototype like a material boss',
-                        style: TextStyle(
-                            fontSize: 22.7895, color: Color(0xefef263238)),
+                      const SizedBox(
+                        height: 5,
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(left: 20, right: 150),
-                      child: Text(
-                        "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
-                        style: TextStyle(
-                            fontSize: 15.95,
-                            fontWeight: FontWeight.w400,
-                            fontStyle: FontStyle.normal),
+                      Container(
+                        margin: const EdgeInsets.only(right: 40),
+                        child: const Text(
+                          'Prototype like a material boss',
+                          style: TextStyle(
+                              fontSize: 22.7895, color: Color(0xefef263238)),
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(238, 191, 198, 210),
-                  borderRadius: BorderRadius.circular(20),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Flexible(
+                        child: Container(
+                          margin: const EdgeInsets.only(left: 20, right: 150),
+                          child: const Text(
+                            "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
+                            style: TextStyle(
+                                fontSize: 15.95,
+                                fontWeight: FontWeight.w400,
+                                fontStyle: FontStyle.normal),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
-              Container(
-                width: 400,
-                height: 200,
-                child: Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(top: 10, right: 280),
-                      child: Text(
-                        '15 mins ago',
-                        style: TextStyle(
-                            fontSize: 13.67, color: Color(0xefef1869EF)),
+              Card(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(238, 191, 198, 210),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.only(top: 10, right: 280),
+                        child: const Text(
+                          '15 mins ago',
+                          style: TextStyle(
+                              fontSize: 13.67, color: Color(0xefef1869ef)),
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(right: 40),
-                      child: Text(
-                        'Prototype like a material boss',
-                        style: TextStyle(
-                            fontSize: 22.7895, color: Color(0xefef263238)),
+                      const SizedBox(
+                        height: 5,
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(left: 20, right: 150),
-                      child: Text(
-                        "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
-                        style: TextStyle(
-                            fontSize: 15.95,
-                            fontWeight: FontWeight.w400,
-                            fontStyle: FontStyle.normal),
+                      Container(
+                        margin: const EdgeInsets.only(right: 40),
+                        child: const Text(
+                          'Prototype like a material boss',
+                          style: TextStyle(
+                              fontSize: 22.7895, color: Color(0xefef263238)),
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(238, 191, 198, 210),
-                  borderRadius: BorderRadius.circular(20),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Flexible(
+                        child: Container(
+                          margin: EdgeInsets.only(left: 20, right: 150),
+                          child: const Text(
+                            "When the top app bar scrolls, its elevation above other elements becomes apparent. The top app bar disappears upon scrolling up, and appears upon scrolling down",
+                            style: TextStyle(
+                                fontSize: 15.95,
+                                fontWeight: FontWeight.w400,
+                                fontStyle: FontStyle.normal),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
@@ -257,7 +269,7 @@ class _MyWidgetState extends State<HomePage> {
                       width: 80,
                       height: 80,
                       decoration: BoxDecoration(
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               alignment: Alignment.topCenter,
                               fit: BoxFit.cover,
                               image: AssetImage(
@@ -267,14 +279,14 @@ class _MyWidgetState extends State<HomePage> {
                     ),
                     Container(
                       margin: EdgeInsets.only(top: 40, right: 100),
-                      child: Text(
+                      child: const Text(
                         'Penelopa Shluhina',
                         style: TextStyle(fontSize: 20, color: Colors.white),
                       ),
                     ),
                     Container(
                       margin: EdgeInsets.only(right: 100),
-                      child: Text(
+                      child: const Text(
                         'purchasenow@gmail.com',
                         style: TextStyle(color: Colors.white),
                       ),
@@ -295,7 +307,7 @@ class _MyWidgetState extends State<HomePage> {
                                 onPressed: () {},
                                 icon: Icon(Icons.inbox),
                                 label: Text('Inbox'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
@@ -304,7 +316,7 @@ class _MyWidgetState extends State<HomePage> {
                                 onPressed: () {},
                                 icon: Icon(Icons.bookmark),
                                 label: Text('Book'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
@@ -313,7 +325,7 @@ class _MyWidgetState extends State<HomePage> {
                                 onPressed: () {},
                                 icon: Icon(Icons.chat),
                                 label: Text('Chat'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
@@ -322,7 +334,7 @@ class _MyWidgetState extends State<HomePage> {
                                 onPressed: () {},
                                 icon: Icon(Icons.archive),
                                 label: Text('Archive'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         SizedBox(
@@ -330,8 +342,8 @@ class _MyWidgetState extends State<HomePage> {
                           child: Container(color: Colors.red),
                         ),
                         Container(
-                          margin: EdgeInsets.only(top: 10, right: 180),
-                          child: Text(
+                          margin: const EdgeInsets.only(top: 10, right: 180),
+                          child: const Text(
                             "Subheadr",
                             style: TextStyle(color: Colors.white, fontSize: 19),
                           ),
@@ -342,16 +354,16 @@ class _MyWidgetState extends State<HomePage> {
                                 onPressed: () {},
                                 icon: Icon(Icons.place),
                                 label: Text('Place'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
-                            margin: EdgeInsets.only(right: 170),
+                            margin: const EdgeInsets.only(right: 170),
                             child: OutlinedButton.icon(
                                 onPressed: () {},
                                 icon: Icon(Icons.update),
                                 label: Text('Update'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
@@ -360,7 +372,7 @@ class _MyWidgetState extends State<HomePage> {
                                 onPressed: () {},
                                 icon: Icon(Icons.message),
                                 label: Text('Messeg'))),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
